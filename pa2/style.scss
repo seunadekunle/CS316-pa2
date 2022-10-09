@@ -1,5 +1,28 @@
-$login-bg : #f8f8f8;
 
-*{
-    background-color: $login-bg;
+$login-bg : #f8f8f8;
+$ui-width: 50%;
+$ui-radius: 1em;
+
+body {
+    background: $login-bg;
+}
+
+.form-wrapper {
+    margin: 0 auto;
+    width: 50%;
+    top: 50%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+button {
+    margin-top: 1em;
+    width: $ui-width;
+}
+
+input {
+    width: $ui-width;
+    background-color: white;
+    border-radius: $ui-radius;
 }
