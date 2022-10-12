@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project 2 Login Page</title>
+    <title>Project 2 Account Page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,8 +29,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="login.html">Login</a>
-          <a class="nav-item nav-link" href="AcctPg.html">User</a>
+          <a class="nav-item nav-link" href="login.html">Login</a>
+          <a class="nav-item nav-link active" href="AcctPg.html">User</a>
           <a class="nav-item nav-link" href="signup.html">New</a>
         </div>
       </div>
@@ -38,29 +38,38 @@
   </header>
 
   <body>
-    <div class="form-wrapper">
-      <form>
-        <div class="form-floating mb-3">
-          <input
-            type="text"
-            class="form-control"
-            id="floatingInput"
-            placeholder="username"
-          />
-          <label for="floatingInput">Username</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="password"
-            class="form-control"
-            id="floatingPassword"
-            placeholder="Password"
-          />
-          <label for="floatingPassword">Password</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
+    <form>
+      <div class="form-floating-username">
+        <label for="floatingUser">Username</label>
+        <input
+          type="Username"
+          class="form-control"
+          id="floatingUser"
+          placeholder="Username: RockStar28"
+        />
+      </div>
+
+      <div class="form-floating-Email">
+        <label for="floatingEmail">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="floatingEmail"
+          placeholder="Email: SupremeDreams@uky.edu"
+        />
+      </div>
+
+      <div class="form-floating-phonenumber">
+        <label for="floatingPhone">Phone</label>
+        <input
+          type="phone number"
+          class="form-control"
+          id="floatingPhone"
+          placeholder="Phone Number: 1974901704"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
